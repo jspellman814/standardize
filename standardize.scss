@@ -1,19 +1,44 @@
-/*! standardize.css v1.0 */
+/*! standardize.css v1.0.0 | MIT License | github.com/jspellman814/standardize*/
+
+/**
+ * This file is a slight fork of these original sources:
+ * - http://necolas.github.io/normalize.css/
+ * - https://jonathantneal.github.io/sanitize.css/
+ */
 
 /**
  * Base
  */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-family: $base-font-family; /* 1 */
-  font-size: 100% * ($base-font-size / 16px); /* 3 */
-  // Establish a vertical rhythm unit using $base-line-height.
+  font-family: sans-serif;
+  font-size: 10px;
 }
 
 /* Remove default margin. */
 body {
   margin: 0;
   padding: 0;
+}
+
+
+/**
+ * Links
+ */
+
+/* Address `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and also mouse hovered in all browsers. */
+a:active,
+a:hover {
+  outline: 0;
 }
 
 /**
@@ -60,20 +85,15 @@ audio:not([controls]) {
 /**
  * Typography
  */
-
-blockquote {
-  /* Also indent the quote on both sides. */
-  margin: 20px $indent-amount;
+blockquote,
+p {
+  margin: 1em 0;
 }
 
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+
+/* Address styling not present in IE 8/9, Safari 5, and Chrome. */
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: 1px dotted;
 }
 
 /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
@@ -91,9 +111,8 @@ dfn {
 hr {
   box-sizing: content-box;
   height: 0;
-  border: 1px solid #666;
-  padding-bottom: -1px;
-  margin: 20px 0;
+  border-bottom: 1px solid;
+  margin: 1em 0;
 }
 
 /* Address styling not present in IE 8/9. */
@@ -112,7 +131,7 @@ pre,
 samp,
 tt,
 var {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -157,7 +176,7 @@ menu,
 ol,
 ul {
   /* Address margins set differently in IE 6/7. */
-  margin: 20px inherit;
+  margin: 1em 0;
 }
 ol,
 ul {
@@ -168,14 +187,14 @@ ul {
   }
 }
 dd {
-  margin: 0 0 0 $indent-amount; /* LTR */
+  margin: 0 0 0 30px; /* LTR */
 }
 
 /* Address paddings set differently in IE 6/7. */
 menu,
 ol,
 ul {
-  padding: 0 0 0 $indent-amount; /* LTR */
+  padding: 0 0 0 30px; /* LTR */
 }
 
 /**
@@ -229,12 +248,9 @@ figure {
  * Forms
  */
 
-/* Define consistent border, margin, and padding. */
+/* Define consistent border */
 fieldset {
   border: 1px solid;
-  border-color: #c0c0c0;
-  margin: 0 2px;
-  padding: 5px;
 }
 
 /**
@@ -244,7 +260,6 @@ fieldset {
  */
 legend {
   border: 0; /* 2 */
-  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -380,5 +395,5 @@ table {
   /* Prevent cramped-looking tables */
   width: 100%;
   /* Add margins. */
-  margin: 20px inherit;
+  margin: 1em 0;
 }
