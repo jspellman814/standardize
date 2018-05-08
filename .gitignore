@@ -1,5 +1,2 @@
-*
-!.gitignore
-!package.json
-!README.md
-!standardize.scss
+# Ignore IDE files
+.idea/
