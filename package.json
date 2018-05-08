@@ -1,4 +1,19 @@
 {
-  "name" : "standardize-scss",
-  "version" : "1.0.1"
+  "name": "standardize-scss",
+  "version": "1.0.4",
+  "main": "stylesheet/standardize.scss",
+  "eyeglass": {
+    "needs": "^1.0.0",
+    "exports": "eyeglass-exports.js",
+    "name": "standardize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jspellman814/standardize.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jspellman814/standardize/issues"
+  }
 }
