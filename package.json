@@ -1,6 +1,6 @@
 {
-  "name": "standardize-scss",
-  "version": "1.0.4",
+  "name": "standardize-sass",
+  "version": "1.0.0",
   "main": "stylesheet/standardize.scss",
   "eyeglass": {
     "needs": "^1.0.0",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jspellman814/standardize.git"
+    "url": "git+https://github.com/jspellman814/standardize-sass.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jspellman814/standardize/issues"
+    "url": "https://github.com/jspellman814/standardize-sass/issues"
   }
 }
