@@ -1,6 +1,6 @@
 {
   "name": "standardize-sass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "stylesheet/standardize.scss",
   "eyeglass": {
     "needs": "^1.0.0",
